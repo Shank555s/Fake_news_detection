@@ -15,6 +15,17 @@ A machine learning project that detects whether a piece of news is **real** or *
 
 ## 🗂️ Project Structure
 
+fake_news_full_app/
+├── app.py # Flask app
+├── train_model.py # Model training script
+├── fake_news_dataset.csv # Combined dataset (removed from GitHub due to size)
+├── fake_news_model.pkl # Trained model file
+├── vectorizer.pkl # TF-IDF vectorizer file
+├── templates/
+│ └── index.html # Frontend for the web app
+├── requirements.txt # Required Python packages
+└── README.md
+
 
 ---
 
@@ -24,14 +35,24 @@ A machine learning project that detects whether a piece of news is **real** or *
 
 ```bash
 git clone https://github.com/Shank555s/fake_news_detection.git
-1.cd fake_news_full_app
-//Activate python environment
-2.python -m venv venv
-.\venv\Scripts\Activate.ps1
-//Download the requirements
-3.pip install -r requirements.txt
-//Training the model
-4.python train_model.py
-//Running the web app
-5.python app.py
-http://127.0.0.1:5000/
+cd fake_news_full_app
+```
+2. Create a virtual environment:
+
+```
+python -m venv venv
+```
+3. Activate the virtual environment:
+   
+```
+Windows (PowerShell): .\venv\Scripts\Activate.ps1
+Windows (CMD): .\venv\Scripts\activate.bat
+Mac/Linux: source venv/bin/activate
+```
+4. Install dependencies:
+```
+pip install -r requirements.txt
+```
+5. python train_model.py
+6. python app.py
+7. http://127.0.0.1:5000/
