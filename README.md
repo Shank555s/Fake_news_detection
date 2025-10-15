@@ -37,11 +37,13 @@ fake_news_full_app/
 git clone https://github.com/Shank555s/fake_news_detection.git
 cd fake_news_full_app
 ```
+
 2. Create a virtual environment:
 
 ```
 python -m venv venv
 ```
+
 3. Activate the virtual environment:
    
 ```
@@ -49,10 +51,20 @@ Windows (PowerShell): .\venv\Scripts\Activate.ps1
 Windows (CMD): .\venv\Scripts\activate.bat
 Mac/Linux: source venv/bin/activate
 ```
+
 4. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
-5. python train_model.py
-6. python app.py
-7. http://127.0.0.1:5000/
+
+5. Train the model:
+```
+python train_model.py
+```
+
+7. Run the web app:
+```
+python app.py
+
+http://127.0.0.1:5000/
+```
